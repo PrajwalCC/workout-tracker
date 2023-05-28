@@ -5,7 +5,7 @@ import { useAuthContext } from "../hooks/useAuthContext"
 import WorkoutDetails from '../components/WorkoutDetails'
 import WorkoutForm from '../components/WorkoutForm'
 
-const backendUrl = process.env.BACKEND_URL
+const backendUrl = process.env.REACT_APP_BACKEND_URL
 const Home = () => {
   const {workouts, dispatch} = useWorkoutsContext()
   const {user} = useAuthContext()

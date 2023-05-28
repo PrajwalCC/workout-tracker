@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { useWorkoutsContext } from "../hooks/useWorkoutsContext"
 import { useAuthContext } from '../hooks/useAuthContext'
-const backendUrl = process.env.BACKEND_URL
+const backendUrl = process.env.REACT_APP_BACKEND_URL
 const WorkoutForm = () => {
   const { dispatch } = useWorkoutsContext()
   const { user } = useAuthContext()

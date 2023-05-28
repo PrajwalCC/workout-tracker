@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useAuthContext } from './useAuthContext'
-const backendUrl = process.env.BACKEND_URL
+const backendUrl = process.env.REACT_APP_BACKEND_URL
 
 export const useLogin = () => {
   const [error, setError] = useState(null)

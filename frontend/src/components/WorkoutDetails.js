@@ -2,7 +2,7 @@ import { useWorkoutsContext } from '../hooks/useWorkoutsContext'
 import { useAuthContext } from '../hooks/useAuthContext'
 // date fns
 import formatDistanceToNow from 'date-fns/formatDistanceToNow'
-const backendUrl = process.env.BACKEND_URL
+const backendUrl = process.env.REACT_APP_BACKEND_URL
 
 const WorkoutDetails = ({ workout }) => {
   const { dispatch } = useWorkoutsContext()
